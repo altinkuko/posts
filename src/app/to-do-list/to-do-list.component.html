@@ -1,0 +1,7 @@
+<div class="container mt-4">
+  <h2 class="text-center text-success">Parent Component</h2>
+  <app-todoitem [childMessage]="parentMessage" (messageEvent)="receiveMessage($event)"></app-todoitem>
+  <div class="alert alert-info mt-3">
+    <p class="fw-bold">Message from child: {{ receivedMessage }}</p>
+  </div>
+</div>

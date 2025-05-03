@@ -1,0 +1,7 @@
+<div class="card p-3 text-center">
+  <p class="fw-bold">Received from parent: {{ childMessage }}</p>
+
+  <input type="text" class="form-control my-2" [(ngModel)]="userInput" placeholder="Type something..." />
+
+  <button class="btn btn-primary mt-2" (click)="sendMessage()">Send Message to Parent</button>
+</div>
