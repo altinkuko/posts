@@ -8,7 +8,9 @@ import {PostsComponent} from './posts/posts.component';
 import {HttpClientModule} from '@angular/common/http';
 import { TodoitemComponent } from './todoitem/todoitem.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { PersonFormComponent } from './person-form/person-form.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,16 @@ import {FormsModule} from '@angular/forms';
     PostComponent,
     PostsComponent,
     TodoitemComponent,
-    ToDoListComponent
+    ToDoListComponent,
+    PersonFormComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()
